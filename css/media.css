@@ -1,0 +1,139 @@
+ /*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+    /*----sl-slider---*/
+    .wrapper .sl-slider .slick-prev::before{
+        content: " ";
+        padding: 0;
+        border: none;
+    }
+    .wrapper .sl-slider .slick-next::before{
+        content: " ";
+        padding: 0;
+        border: none;
+    }
+}
+ /*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px) {
+    /*----sl-slider---*/
+    .sl-slider .slick-prev::before{
+        content: url("../images/left-arrow.png");
+        padding: 0;
+        border: none;
+    }
+    .sl-slider .slick-next::before{
+        content: url("../images/right-arrow.png");
+        padding: 0;
+        border: none;
+    }
+    .sl-slide-body .slide-body-description, .slide-body-title{
+        display: none;
+    }
+    /*----section-contact----*/
+    .main-works{
+        display: flex;
+        flex-direction: column;
+    }
+    .list-address{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    /*----footer----*/
+    .copyright, .privacy-center{
+        text-align: center;
+        margin: 10px 0;
+    }
+
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991px) {
+    /*----sl-slider---*/
+    .sl-slide-body .slide-body-title{
+        font: 400 20px 'Montserrat-Regular';
+        text-transform: uppercase;
+    }
+    .sl-slide-body .slide-body-description{
+        font: 400 16px 'OpenSans-Light';
+    }
+    /*----section-contact----*/
+    .main-works{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199px) {
+    /*----header----*/
+    .responsive-bar{
+        display: block;
+        width: 100%;
+        height: 60px;
+        background: #262626;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 5px 20px;
+        box-sizing: border-box;
+        z-index: 4;
+    }
+    .responsive-bar .logo img{
+        float: left;
+        height: 50px;
+    }
+    .responsive-bar .menu h4{
+        float: right;
+        color: #FFF;
+        margin: 0;
+        padding: 0;
+        line-height: 50px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    nav, nav.black{
+        background: #262626;
+        height: 60px;
+        padding: 0;
+    }
+    nav .logo{
+        display: none;
+    }
+    nav ul{
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #262626;
+        float: none;
+        display: block;
+    }
+    nav ul.active{
+        display: none;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    nav ul li a{
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 30px !important;
+        color: #fff;
+    }
+
+
+
+
+
+}
+
+ /*Extra large devices (large desktops) */
+/*No media query since the extra-large breakpoint has no upper bound on its width*/
+ @media (max-width: 1070px) {
+
+
+
+ }
